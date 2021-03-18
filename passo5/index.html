@@ -1,0 +1,631 @@
+<html> <!--início do documento html-->
+	
+	<head> <!--início da head do documento html-->
+		
+		<style> /*início das modificações visuais da tabela (parte de CSS do documento)*/
+		#tabela { /*definições da tabela*/
+		  font-family: Arial, Helvetica, sans-serif; /*seleção de fonte*/
+		  border-collapse: collapse; /*estilo de borda da tabela*/
+		  width: 40%; /*largura da tabela*/
+		  margin-left:auto;  /*distanciamento à esquerda*/
+		  margin-right:auto; /*distanciamento à direita*/
+		}
+
+		#tabela td, #customers th { /*definições das linhas "normais" da tabela*/
+		  border: thin solid #ddd; /*definições das bordas das células de "normais" da tabela*/
+		  padding: 8px; /*margens dentro das células "normais"*/
+		  text-align: center; /*alinhamento ao centro*/
+		}
+
+		#tabela th { /*definições das linhas de "cabeçalho" da tabela*/
+		  border: thin solid #666666; /*definições das bordas das células de "cabeçalho" da tabela*/
+		  padding-top: 12px; /*margens dentro das células (na parte superior)*/
+		  padding-bottom: 12px; /*margens dentro das células (na parte inferior)*/
+		  text-align: center; /*alinhamento ao centro*/
+		  background-color: #333399; /*cor de fundo das células*/
+		  color: white;  /*cor do texto nas células de "cabeçalho"*/
+		}	
+		</style> <!--fim das modificações visuais da tabela (parte de CSS do documento)-->
+		
+	</head> <!--fim da head do documento html-->
+  
+	<body> <!--início do body do documento html-->
+     
+		<table style=100% id="tabela"> <!--início da tabela e atribuição do nome "tabela" para conseguir alterar as suas definições visuais (código acima)-->
+		  
+		  <tr> <!--início de uma nova linha na tabela-->
+			<th colspan="4"> <!--início de uma nova (única) célula/ o texto nesta linha ocupará apenas 1 célula ao invés de 3 como no resto da tabela-->
+				<p align="center"> Pauta Caricaturada da Turma 12º 2ª </p> <!--parágrafo com texto alinhado ao centro-->
+			</th> <!--fim da célula-->
+		  </tr> <!--fim da linha da tabela-->
+		  
+		  <tr>
+			<th>
+				Nome <!--"cabeçalho" da primeira coluna da tabela-->
+			</th>
+			
+			<th>
+				Número <!--"cabeçalho" da segunda coluna da tabela-->
+			</th>
+			
+			<th>
+				Turma <!--"cabeçalho" da terceira coluna da tabela-->
+			</th>
+			
+			<th>
+				Miniatura da Caricatura <!--"cabeçalho" da quarta coluna da tabela-->
+			</th>
+			
+		  </tr>
+		  
+		  <tr>
+			<td>
+				<p style="color:DarkSlateGrey;">Afonso Kirkby</p> <!--o nome do aluno está definido com uma cor-->
+			</td>
+			
+			<td>
+				<p style="color:DarkSlateGrey;">1</p> <!--o número do aluno está definido com a mesma cor que o nome-->
+			</td>
+			
+			<td>
+				<p style="color:DarkSlateGrey;">12º 2ª</p> <!--a turma do aluno está definida com a mesma cor que o nome e o número-->
+			</td>
+			
+			<td>
+				<a href="imagens/afonsokirkbymax.jpg" target="_blank"> <!--com um clique na imagem, o utilizador será redirecionado para a versão maior da caricatura/ target="_blank" indica que a imagem irá abrir um novo separador-->
+					<img src="imagens/afonsokirkbymin.jpg" /> <!--esta é a imagem da miniatura da caricatura que estará visivel normalmente-->
+				</a>
+			</td>
+		  </tr>
+		  
+		  <!--a partir daqui o código repete-se para os restantes alunos, mudando apenas os respetivos nomes, números de turma e nomes da caricatura-->
+		  
+		  <tr>
+			<td>
+				<p style="color:DarkOrange;">Afonso Teixeira</p>
+			</td>
+			
+			<td>
+				<p style="color:DarkOrange;">2</p>
+			</td>
+			
+			<td>
+				<p style="color:DarkOrange;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/afonsoteixeiramax.jpg" target="_blank">
+					<img src="imagens/afonsoteixeiramin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:FireBrick;">André Pita</p>
+			</td>
+			
+			<td>
+				<p style="color:FireBrick;">3</p>
+			</td>
+			
+			<td>
+				<p style="color:FireBrick;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/pitamax.jpg" target="_blank">
+					<img src="imagens/pitamin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:SaddleBrown;">André Mota</p>
+			</td>
+			
+			<td>
+				<p style="color:SaddleBrown;">4</p>
+			</td>
+			
+			<td>
+				<p style="color:SaddleBrown;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/motamax.jpg" target="_blank">
+					<img src="imagens/motamin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:Teal;">Ângelo Cardoso</p>
+			</td>
+			
+			<td>
+				<p style="color:Teal;">5</p>
+			</td>
+			
+			<td>
+				<p style="color:Teal;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/angelomax.jpg" target="_blank">
+					<img src="imagens/angelomin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:YellowGreen;">Bernardo Bernardes</p>
+			</td>
+			
+			<td>
+				<p style="color:YellowGreen;">6</p>
+			</td>
+			
+			<td>
+				<p style="color:YellowGreen;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/bernardomax.jpg" target="_blank">
+					<img src="imagens/bernardomin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:Indigo;">Daniel Zayika</p>
+			</td>
+			
+			<td>
+				<p style="color:Indigo;">7</p>
+			</td>
+			
+			<td>
+				<p style="color:Indigo;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/zayikamax.jpg" target="_blank">
+					<img src="imagens/zayikamin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:GoldenRod;">Diogo Figueiredo</p>
+			</td>
+			
+			<td>
+				<p style="color:GoldenRod;">8</p>
+			</td>
+			
+			<td>
+				<p style="color:GoldenRod;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/diogofigueiredomax.jpg" target="_blank">
+					<img src="imagens/diogofigueiredomin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:DarkCyan;">Diogo Martins</p>
+			</td>
+			
+			<td>
+				<p style="color:DarkCyan;">9</p>
+			</td>
+			
+			<td>
+				<p style="color:DarkCyan;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/diogomartinsmax.jpg" target="_blank">
+					<img src="imagens/diogomartinsmin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:DodgerBlue;">Diogo Agulheiro</p>
+			</td>
+			
+			<td>
+				<p style="color:DodgerBlue;">10</p>
+			</td>
+			
+			<td>
+				<p style="color:DodgerBlue;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/agulheiromax.jpg" target="_blank">
+					<img src="imagens/agulheiromin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:Brown;">Francisco Mendes</p>
+			</td>
+			
+			<td>
+				<p style="color:Brown;">12</p>
+			</td>
+			
+			<td>
+				<p style="color:Brown;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/franciscomax.jpg" target="_blank">
+					<img src="imagens/franciscomin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:DarkOliveGreen;">Guilherme Marques</p>
+			</td>
+			
+			<td>
+				<p style="color:DarkOliveGreen;">13</p>
+			</td>
+			
+			<td>
+				<p style="color:DarkOliveGreen;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/marquesmax.jpg" target="_blank">
+					<img src="imagens/marquesmin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:ForestGreen;">Guilherme Marcelo</p>
+			</td>
+			
+			<td>
+				<p style="color:ForestGreen;">14</p>
+			</td>
+			
+			<td>
+				<p style="color:ForestGreen;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/guilhermemarcelomax.jpg" target="_blank">
+					<img src="imagens/guilhermemarcelomin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:LightCoral;">Gustavo Telhada</p>
+			</td>
+			
+			<td>
+				<p style="color:LightCoral;">15</p>
+			</td>
+			
+			<td>
+				<p style="color:LightCoral;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/gustavomax.jpg" target="_blank">
+					<img src="imagens/gustavomin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:Maroon;">Haoje Huang</p>
+			</td>
+			
+			<td>
+				<p style="color:Maroon;">16</p>
+			</td>
+			
+			<td>
+				<p style="color:Maroon;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/haojemax.jpg" target="_blank">
+					<img src="imagens/haojemin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:SeaGreen;">João Fidalgo</p>
+			</td>
+			
+			<td>
+				<p style="color:SeaGreen;">17</p>
+			</td>
+			
+			<td>
+				<p style="color:SeaGreen;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/fidalgomax.jpg" target="_blank">
+					<img src="imagens/fidalgomin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:RosyBrown;">João Gonçalves</p>
+			</td>
+			
+			<td>
+				<p style="color:RosyBrown;">18</p>
+			</td>
+			
+			<td>
+				<p style="color:RosyBrown;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/joaogonçalvesmax.jpg" target="_blank">
+					<img src="imagens/joaogonçalvesmin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:DarkSlateGray;">José Silva</p>
+			</td>
+			
+			<td>
+				<p style="color:DarkSlateGray;">19</p>
+			</td>
+			
+			<td>
+				<p style="color:DarkSlateGray;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/josemax.jpg" target="_blank">
+					<img src="imagens/josemin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:Indigo;">Luís Canossa</p>
+			</td>
+			
+			<td>
+				<p style="color:Indigo;">20</p>
+			</td>
+			
+			<td>
+				<p style="color:Indigo;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/canossamax.jpg" target="_blank">
+					<img src="imagens/canossamin.jpg" />
+				</a>
+			</td>
+		  </tr>
+
+		  
+		  <tr>
+			<td>
+				<p style="color:Gold;">Manuel Vizoso</p>
+			</td>
+			
+			<td>
+				<p style="color:Gold;">22</p>
+			</td>
+			
+			<td>
+				<p style="color:Gold;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/manuelmax.jpg" target="_blank">
+					<img src="imagens/manuelmin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:DarkKhaki;">Mariana Azevedo</p>
+			</td>
+			
+			<td>
+				<p style="color:DarkKhaki;">23</p>
+			</td>
+			
+			<td>
+				<p style="color:DarkKhaki;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/marianamax.jpg" target="_blank">
+					<img src="imagens/marianamin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:CornflowerBlue;">Miguel Lorga</p>
+			</td>
+			
+			<td>
+				<p style="color:CornflowerBlue;">24</p>
+			</td>
+			
+			<td>
+				<p style="color:CornflowerBlue;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/lorgamax.jpg" target="_blank">
+					<img src="imagens/lorgamin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:Maroon;">Rodrigo Simões</p>
+			</td>
+			
+			<td>
+				<p style="color:Maroon;">25</p>
+			</td>
+			
+			<td>
+				<p style="color:Maroon;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/rodrigomax.jpg" target="_blank">
+					<img src="imagens/rodrigomin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:DimGray;">Tiago Farinha</p>
+			</td>
+			
+			<td>
+				<p style="color:DimGray;">26</p>
+			</td>
+			
+			<td>
+				<p style="color:DimGray;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/tiagomax.jpg" target="_blank">
+					<img src="imagens/tiagomin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:DarkGreen;">Tomás Perdigão</p>
+			</td>
+			
+			<td>
+				<p style="color:DarkGreen;">27</p>
+			</td>
+			
+			<td>
+				<p style="color:DarkGreen;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/perdigaomax.jpg" target="_blank">
+					<img src="imagens/perdigaomin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:MediumOrchid;">Luís Oliveira</p>
+			</td>
+			
+			<td>
+				<p style="color:MediumOrchid;">28</p>
+			</td>
+			
+			<td>
+				<p style="color:MediumOrchid;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/oliveiramax.jpg" target="_blank">
+					<img src="imagens/oliveiramin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  
+		  
+		  <tr>
+			<td>
+				<p style="color:DodgerBlue;">Vasco Baldé</p>
+			</td>
+			
+			<td>
+				<p style="color:DodgerBlue;">29</p>
+			</td>
+			
+			<td>
+				<p style="color:DodgerBlue;">12º 2ª</p>
+			</td>
+			
+			<td>
+				<a href="imagens/vascomax.jpg" target="_blank">
+					<img src="imagens/vascomin.jpg" />
+				</a>
+			</td>
+		  </tr>
+		  		  
+		  
+	</body> <!--fim do body do documento html-->
+
+</html> <!--fim do documento html-->
